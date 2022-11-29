@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Авторизация" android:id = "@+id/leftBurgerAuthorization"/>
+    <item android:title="Настройки" android:id = "@+id/settings"/>
+    <item android:title="Статистика" android:id = "@+id/statistics"/>
+    <item android:title="Игрок" android:id = "@+id/playerInformation" />
+    <item android:title="Команда" android:id = "@+id/teamInformation" />
+    <item android:title="Выйти" android:id= "@+id/out"/>
+</menu>

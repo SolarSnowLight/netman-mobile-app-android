@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toast_game"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/toast_border">
+
+    <TextView android:id="@+id/toast_game_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:text="Точка найдена"
+        android:gravity="center_horizontal" />
+
+</LinearLayout>

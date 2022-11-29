@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector
+xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:state_pressed="true"
+        android:drawable="@drawable/rect_enter_btn_shape" />
+
+    <item
+        android:state_checked="true"
+        android:drawable="@drawable/rect_enter_btn_shape" />
+
+    <item
+         android:state_enabled="true"
+        android:drawable="@drawable/rect_enter_btn_shape" />
+
+
+<!--    <item android:id ="@+id/second"-->
+<!--        android:drawable="@drawable/toggle_unchecked_checked" />-->
+<!--    <transition-->
+<!--        android:drawable="@drawable/telega_background"-->
+<!--        android:fromId="@id/first"-->
+<!--        android:toId="@id/second"-->
+<!--        />-->
+
+<!--    <transition-->
+<!--        android:drawable="@drawable/toggle_checked_unchecked"-->
+<!--        android:fromId="@+id/first"-->
+<!--        android:toId="@+id/second" />-->
+
+</animated-selector>
+
+<!--    <item android:state_pressed="true" android:drawable="@drawable/rect_enter_btn_shape"  >-->
+<!--    </item>-->
+
+<!--    <item android:state_checked="true" android:drawable="@drawable/rect_enter_btn_shape" >-->
+<!--    </item>-->
+
+<!--    <item android:state_enabled="true" android:state_first="false" android:drawable="@drawable/rect_enter_btn_shape">-->
+<!--    </item>-->
+
+
+
+

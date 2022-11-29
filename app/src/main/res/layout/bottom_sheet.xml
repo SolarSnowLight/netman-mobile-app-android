@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<eightbitlab.com.blurview.BlurView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottomsheet_background_shape"
+    android:backgroundTintMode="add"
+    android:orientation="vertical"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="210dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <View
+                android:id="@+id/view9"
+                android:layout_width="150dp"
+                android:layout_height="5dp"
+                android:background="@drawable/horizontal_line"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.485"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clMessage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <View
+                    android:id="@+id/vSendTextMess"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/ic_smile"
+                    app:layout_constraintBottom_toBottomOf="@+id/pt_inputTextMess"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/pt_inputTextMess" />
+
+                <TextView
+                    android:id="@+id/tvCancellationVideoMess"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Отмена"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/pt_inputTextMess"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:hint="Напишите сообщение"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:paddingLeft="20dp"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/vSendTextMess"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clBottomSheetContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout7">
+
+            <Button
+                android:id="@+id/btnMicroChatBottom"
+                android:layout_width="162dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangle_white_games_items"
+                android:drawableRight="@drawable/ic_union"
+                android:text="Нажмите для записи"
+
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                app:backgroundTint="@null"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout7" />
+
+            <Button
+                android:id="@+id/btnCameraChatBottom"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/rectangle_white_games_items"
+                android:drawableRight="@drawable/ic_video2"
+                android:text="Нажмите для записи"
+                android:textColor="#FFFFFF"
+
+                android:textSize="13sp"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/btnMicroChatBottom"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btnMicroChatBottom" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvBottomSheet"
+                android:layout_width="0dp"
+                android:layout_height="125dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnMicroChatBottom" />
+
+            <Button
+                android:id="@+id/btnMicroChatBottom2"
+                style="@style/NotCapsButton"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+
+
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rectangle_white_games_items"
+                android:minWidth="60dip"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="Контакты"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnMicroChatBottom3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rvBottomSheet" />
+
+            <Button
+                android:id="@+id/btnMicroChatBottom3"
+                style="@style/NotCapsButton"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+
+
+                android:layout_marginStart="5dp"
+                android:background="@drawable/rectangle_white_games_items"
+                android:minWidth="60dip"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="Файлы"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/btnMicroChatBottom2"
+                app:layout_constraintEnd_toStartOf="@+id/btnMicroChatBottom4"
+                app:layout_constraintStart_toEndOf="@+id/btnMicroChatBottom2"
+                app:layout_constraintTop_toTopOf="@+id/btnMicroChatBottom2" />
+
+            <Button
+                android:id="@+id/btnMicroChatBottom4"
+                style="@style/NotCapsButton"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+
+                android:background="@drawable/rectangle_white_games_items"
+                android:paddingLeft="0dp"
+
+                android:paddingRight="0dp"
+                android:text="Геопозиция"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/btnMicroChatBottom3"
+                app:layout_constraintEnd_toStartOf="@+id/btnMicroChatBottom5"
+                app:layout_constraintStart_toEndOf="@+id/btnMicroChatBottom3"
+                app:layout_constraintTop_toTopOf="@+id/btnMicroChatBottom3" />
+
+            <Button
+                android:id="@+id/btnMicroChatBottom5"
+                style="@style/NotCapsButton"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="15dp"
+
+
+                android:background="@drawable/rectangle_white_games_items"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:text="GIF"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="@+id/btnMicroChatBottom4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnMicroChatBottom4"
+                app:layout_constraintTop_toTopOf="@+id/btnMicroChatBottom4" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</eightbitlab.com.blurview.BlurView>
+
+

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">NeTMan Mobile Game</string>
+    <string name="local_storage">local_storage</string>
+    <string name="users_data">users_data</string>
+    <string name="task_marks">task_marks</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="link"><a href="https://www.google.com/"><u>Зарегистрироваться</u></a></string>
+    <string name="oauth_client_id">796264274228-81d5mtuors9ovuo28htkivuc0m7dbe42.apps.googleusercontent.com</string>
+    <string name="something">Something</string>
+
+    <array name="autosize_text_sizes">
+        <item>10sp</item>
+        <item>12sp</item>
+        <item>20sp</item>
+        <item>40sp</item>
+        <item>100sp</item>
+    </array>
+    <string name="title_activity_phone">PhoneActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_auth">AuthActivity</string>
+</resources>

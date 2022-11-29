@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MobileAppAR" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Status bar color. --> <!-- Primary brand color. -->
+
+<!--        <item name="colorAccent">@color/colorPrimaryDark</item>-->
+
+
+        <!-- Secondary brand color. -->
+<!--        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>-->
+        <!-- Customize your theme here. -->
+        <item name="android:textAllCaps">false</item>
+    </style>
+</resources>

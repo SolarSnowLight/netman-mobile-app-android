@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/routes"
+    app:startDestination="@id/playerMapFragment">
+    <fragment
+        android:id="@+id/playerMapFragment"
+        android:name="com.game.mobileappar.fragment.map.PlayerMapFragment"
+        android:label="fragment_player_map"
+        tools:layout="@layout/game_interface_player_map_fragment" >
+    </fragment>
+</navigation>

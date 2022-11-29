@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/messenger_routes_in_messenger"
+    app:startDestination="@id/emptyFragment2">
+
+    <fragment
+        android:id="@+id/emptyFragment2"
+        android:name="com.game.mobileappar.fragment.EmptyFragment"
+        android:label="fragment_empty"
+        tools:layout="@layout/fragment_empty" />
+</navigation>

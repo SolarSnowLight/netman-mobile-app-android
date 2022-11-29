@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout10"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/auth_reg_background"
+    tools:context=".fragment.team.PlayerExistsTeamFragment">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout133_teamBoss"
+        android:layout_width="250dp"
+        android:layout_height="43dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_existingTeamName_teamBoss"
+        app:layout_constraintStart_toStartOf="@+id/tv_existingTeamName_teamBoss"
+        app:layout_constraintTop_toBottomOf="@+id/tv_inTeamMembers2_teamBoss">
+
+        <View
+            android:id="@+id/view55_teamBoss"
+            android:layout_width="41dp"
+            android:layout_height="41dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_star_profile" />
+
+        <View
+            android:id="@+id/view66_teamBoss"
+            android:layout_width="41dp"
+            android:layout_height="41dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_star_profile" />
+
+        <View
+            android:id="@+id/view77_teamBoss"
+            android:layout_width="41dp"
+            android:layout_height="41dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_star_profile" />
+
+        <View
+            android:id="@+id/view88_teamBoss"
+            android:layout_width="41dp"
+            android:layout_height="41dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_star_profile" />
+
+        <View
+            android:id="@+id/view99_teamBoss"
+            android:layout_width="41dp"
+            android:layout_height="41dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_star_profile" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar4_teamBoss"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:titleTextColor="#FFFFFF">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            tools:layout_editor_absoluteX="72dp"
+            tools:layout_editor_absoluteY="3dp">
+
+            <View
+                android:id="@+id/view19_teamBoss"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/ic_pen_profile"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/tv_inTeamMembers9_teamBoss"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:fontFamily="@font/century_gothic"
+        android:text="1 участник"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_existingTeamName_teamBoss"
+        app:layout_constraintStart_toStartOf="@+id/tv_existingTeamName_teamBoss"
+        app:layout_constraintTop_toBottomOf="@+id/tv_existingTeamName_teamBoss" />
+
+    <TextView
+        android:id="@+id/tv_existingTeamName_teamBoss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/permanent_marker"
+        android:gravity="center"
+        android:text="TeamName"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar4_teamBoss" />
+
+
+    <TextView
+        android:id="@+id/tv_inTeamMembers2_teamBoss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/century_gothic"
+        android:text="0"
+        android:textColor="#FFC107"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout133_teamBoss"
+        app:layout_constraintEnd_toEndOf="@+id/tv_existingTeamName_teamBoss"
+        app:layout_constraintStart_toStartOf="@+id/tv_existingTeamName_teamBoss"
+        app:layout_constraintTop_toBottomOf="@+id/tv_inTeamMembers9_teamBoss" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout4_teamBoss"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout133_teamBoss">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout3_teamBoss"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:contentDescription="@string/common_open_on_phone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="#FFFFFF"
+            app:tabMode="fixed"
+            app:tabRippleColor="@null"
+            app:tabSelectedTextColor="#FFC107"
+            app:tabTextColor="#FFFFFF" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager3_teamBoss"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tab_layout3_teamBoss"
+            app:layout_constraintVertical_bias="0.0">
+
+        </androidx.viewpager.widget.ViewPager>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/vPlusTeamBoss"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/ic_plus_team"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4_teamBoss" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

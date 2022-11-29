@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/notification"
+>
+
+    <TextView
+        android:id="@+id/notification_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Новая игра!"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.Compat.Notification.Title"
+        android:textColor="#000"
+        android:textSize="18dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:src="@mipmap/ic_netman_black"
+            />
+        <TextView
+            android:paddingLeft="30px"
+            android:id="@+id/notification_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ваша команда участвует в новой игре!"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.Compat.Notification.Info"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:gravity="start" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

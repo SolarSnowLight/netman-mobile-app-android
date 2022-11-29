@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rout"
+    app:startDestination="@id/emptyFragment">
+
+    <fragment
+        android:id="@+id/emptyFragment"
+        android:name="com.game.mobileappar.fragment.EmptyFragment"
+        android:label="fragment_empty"
+        tools:layout="@layout/fragment_empty" >
+        <action
+            android:id="@+id/action_emptyFragment_to_playerInformationFragment"
+            app:destination="@id/playerInformationFragment"
+            app:enterAnim="@anim/to_left_in"
+            app:exitAnim="@anim/to_left_out"
+            app:popEnterAnim="@anim/to_right_in"
+            app:popExitAnim="@anim/to_right_out" />
+        <action
+            android:id="@+id/action_emptyFragment_to_teamFragment"
+            app:destination="@id/findTeamFragment"
+            app:enterAnim="@anim/to_left_in"
+            app:exitAnim="@anim/to_left_out"
+            app:popEnterAnim="@anim/to_right_in"
+            app:popExitAnim="@anim/to_right_out" />
+        <argument
+            android:name="string"
+            app:argType="string"
+            android:defaultValue="h" />
+        <action
+            android:id="@+id/action_emptyFragment_to_playerInExistingTeamFragment"
+            app:destination="@id/playerInExistingTeamFragment"
+            app:enterAnim="@anim/to_left_in"
+            app:exitAnim="@anim/to_left_out"
+            app:popEnterAnim="@anim/to_right_in"
+            app:popExitAnim="@anim/to_right_out" />
+        <action
+            android:id="@+id/action_emptyFragment_to_rulerRateFragment"
+            app:destination="@id/rulerRateFragment"
+            app:enterAnim="@anim/to_left_in"
+            app:exitAnim="@anim/to_left_out"
+            app:popEnterAnim="@anim/to_right_in"
+            app:popExitAnim="@anim/to_right_out" />
+        <action
+            android:id="@+id/action_emptyFragment_to_existingTeamFragment"
+            app:destination="@id/existingTeamFragment"
+            app:enterAnim="@anim/to_left_in"
+            app:exitAnim="@anim/to_left_out"
+            app:popEnterAnim="@anim/to_right_in"
+            app:popExitAnim="@anim/to_right_out" />
+        <action
+            android:id="@+id/action_emptyFragment_to_teamBossFragment"
+            app:destination="@id/teamBossFragment"
+            app:enterAnim="@anim/to_left_in"
+            app:exitAnim="@anim/to_left_out"
+            app:popEnterAnim="@anim/to_right_in"
+            app:popExitAnim="@anim/to_right_out" />
+        <action
+            android:id="@+id/action_emptyFragment_to_messenger_router3"
+            app:destination="@id/messenger_router" />
+    </fragment>
+    <fragment
+        android:id="@+id/playerInformationFragment"
+        android:name="com.game.mobileappar.fragment.player.CurrentPlayerProfileFragment"
+        android:label="fragment_player_profile"
+        tools:layout="@layout/player_player_profile_fragment" >
+        <action
+            android:id="@+id/action_playerInformationFragment_to_emptyFragment"
+            app:destination="@id/emptyFragment"
+            app:enterAnim="@anim/to_right_in"
+            app:exitAnim="@anim/to_right_out"
+            app:popEnterAnim="@anim/to_left_in"
+            app:popExitAnim="@anim/to_left_out" />
+        <action
+            android:id="@+id/action_playerInformationFragment_to_playerSettingsFragment"
+            app:destination="@id/playerSettingsFragment"
+            app:enterAnim="@anim/to_left_in"
+            app:exitAnim="@anim/to_left_out"
+            app:popEnterAnim="@anim/to_right_in"
+            app:popExitAnim="@anim/to_right_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/playerSettingsFragment"
+        android:name="com.game.mobileappar.fragment.player.PlayerSettingsFragment"
+        android:label="fragment_player_settings"
+        tools:layout="@layout/player_player_settings_fragment" >
+        <action
+            android:id="@+id/action_playerSettingsFragment_to_profileSettingsAccountFragment"
+            app:destination="@id/profileSettingsAccountFragment"
+            app:enterAnim="@anim/to_left_in"
+            app:exitAnim="@anim/to_left_out"
+            app:popEnterAnim="@anim/to_right_in"
+            app:popExitAnim="@anim/to_right_out" />
+        <action
+            android:id="@+id/action_playerSettingsFragment_to_playerInformationFragment"
+            app:destination="@id/playerInformationFragment"
+            app:enterAnim="@anim/to_right_in"
+            app:exitAnim="@anim/to_right_out"
+            app:popEnterAnim="@anim/to_left_in"
+            app:popExitAnim="@anim/to_left_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileSettingsAccountFragment"
+        android:name="com.game.mobileappar.fragment.player.ProfileSettingsAccountFragment"
+        android:label="fragment_profile_settings_account"
+        tools:layout="@layout/player_profile_settings_account_fragment" >
+        <action
+            android:id="@+id/action_profileSettingsAccountFragment_to_playerSettingsFragment"
+            app:destination="@id/playerSettingsFragment"
+            app:enterAnim="@anim/to_right_in"
+            app:exitAnim="@anim/to_right_out"
+            app:popEnterAnim="@anim/to_left_in"
+            app:popExitAnim="@anim/to_left_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/findTeamFragment"
+        android:name="com.game.mobileappar.fragment.team.FindTeamFragment"
+        android:label="fragment_team"
+        tools:layout="@layout/fragment_find_team">
+        <action
+            android:id="@+id/action_teamFragment_to_emptyFragment"
+            app:destination="@id/emptyFragment"
+            app:enterAnim="@anim/to_right_in"
+            app:exitAnim="@anim/to_right_out"
+            app:popEnterAnim="@anim/to_left_in"
+            app:popExitAnim="@anim/to_left_out" />
+        <action
+            android:id="@+id/action_teamFragment_to_inTeamFragment"
+            app:destination="@id/inTeamFragment"
+            app:enterAnim="@anim/to_left_in"
+            app:exitAnim="@anim/to_left_out"
+            app:popEnterAnim="@anim/to_right_in"
+            app:popExitAnim="@anim/to_right_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/inTeamFragment"
+        android:name="com.game.mobileappar.fragment.team.CreateTeamFragment"
+        android:label="InTeamFragment"
+        tools:layout="@layout/fragment_find_team">
+        <action
+            android:id="@+id/action_inTeamFragment_to_teamFragment"
+            app:destination="@id/findTeamFragment"
+            app:enterAnim="@anim/to_right_in"
+            app:exitAnim="@anim/to_right_out"
+            app:popEnterAnim="@anim/to_left_in"
+            app:popExitAnim="@anim/to_left_out" />
+        <action
+            android:id="@+id/action_inTeamFragment_to_findPlayerFragment"
+            app:destination="@id/findPlayerFragment"
+            app:enterAnim="@anim/to_left_in"
+            app:exitAnim="@anim/to_left_out"
+            app:popEnterAnim="@anim/to_right_in"
+            app:popExitAnim="@anim/to_right_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/findPlayerFragment"
+        android:name="com.game.mobileappar.fragment.team.FindPlayerFragment"
+        android:label="fragment_find_player"
+        tools:layout="@layout/teamt_find_player_fragmen" >
+        <action
+            android:id="@+id/action_findPlayerFragment_to_inTeamFragment"
+            app:destination="@id/inTeamFragment"
+            app:enterAnim="@anim/to_right_in"
+            app:exitAnim="@anim/to_right_out"
+            app:popEnterAnim="@anim/to_left_in"
+            app:popExitAnim="@anim/to_left_out" />
+        <action
+            android:id="@+id/action_findPlayerFragment_to_teamBossFragment"
+            app:destination="@id/teamBossFragment"
+            app:enterAnim="@anim/to_right_in"
+            app:exitAnim="@anim/to_right_out"
+            app:popEnterAnim="@anim/to_left_in"
+            app:popExitAnim="@anim/to_left_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/playerInExistingTeamFragment"
+        android:name="com.game.mobileappar.fragment.team.PlayerExistsTeamFragment"
+        android:label="fragment_player_in_existing_team"
+        tools:layout="@layout/team_player_in_existing_team_fragment" >
+        <action
+            android:id="@+id/action_emptyFragment_to_rulerRateFragment"
+            app:destination="@id/rulerRateFragment"
+            app:enterAnim="@anim/to_left_in"
+            app:exitAnim="@anim/to_left_out"
+            app:popEnterAnim="@anim/to_right_in"
+            app:popExitAnim="@anim/to_right_out" />
+        <action
+            android:id="@+id/action_playerInExistingTeamFragment_to_emptyFragment"
+            app:destination="@id/emptyFragment"
+            app:enterAnim="@anim/to_right_in"
+            app:exitAnim="@anim/to_right_out"
+            app:popEnterAnim="@anim/to_left_in"
+            app:popExitAnim="@anim/to_left_out" />
+        <action
+            android:id="@+id/action_playerInExistingTeamFragment_to_playerProfileInTeamFragment"
+            app:destination="@id/playerProfileInTeamFragment"
+            app:enterAnim="@anim/to_left_in"
+            app:exitAnim="@anim/to_left_out"
+            app:popEnterAnim="@anim/to_right_in"
+            app:popExitAnim="@anim/to_right_out" />
+        <argument
+            android:name="arg1"
+            app:argType="string"
+            android:defaultValue="f" />
+    </fragment>
+    <fragment
+        android:id="@+id/rulerRateFragment"
+        android:name="com.game.mobileappar.fragment.judge.RulerRateFragment"
+        android:label="RulerRateFragment" >
+        <action
+            android:id="@+id/action_rulerRateFragment_to_emptyFragment"
+            app:destination="@id/emptyFragment"
+            app:enterAnim="@anim/to_right_in"
+            app:exitAnim="@anim/to_right_out"
+            app:popEnterAnim="@anim/to_left_in"
+            app:popExitAnim="@anim/to_left_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/existingTeamFragment"
+        android:name="com.game.mobileappar.fragment.team.PlayerExistsTeamFragment"
+        android:label="ExistingTeamFragment">
+        <action
+            android:id="@+id/action_existingTeamFragment_to_emptyFragment"
+            app:destination="@id/emptyFragment"
+            app:enterAnim="@anim/to_right_in"
+            app:exitAnim="@anim/to_right_out"
+            app:popEnterAnim="@anim/to_left_in"
+            app:popExitAnim="@anim/to_left_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/playerProfileInTeamFragment"
+        android:name="com.game.mobileappar.fragment.team.PlayerProfileFragment"
+        android:label="team_player_profile_in_team_fragment"
+        tools:layout="@layout/team_player_profile_in_team_fragment" >
+        <action
+            android:id="@+id/action_playerProfileInTeamFragment_to_playerInExistingTeamFragment"
+            app:destination="@id/playerInExistingTeamFragment"
+            app:enterAnim="@anim/to_right_in"
+            app:exitAnim="@anim/to_right_out"
+            app:popEnterAnim="@anim/to_left_in"
+            app:popExitAnim="@anim/to_right_out" />
+        <action
+            android:id="@+id/action_playerProfileInTeamFragment_to_teamBossFragment"
+            app:destination="@id/teamBossFragment"
+            app:enterAnim="@anim/to_right_in"
+            app:exitAnim="@anim/to_right_out"
+            app:popEnterAnim="@anim/to_left_in"
+            app:popExitAnim="@anim/to_left_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/teamBossFragment"
+        android:name="com.game.mobileappar.fragment.team.CreatorTeamFragment"
+        android:label="TeamBossFragment" >
+        <action
+            android:id="@+id/action_teamBossFragment_to_emptyFragment"
+            app:destination="@id/emptyFragment"
+            app:enterAnim="@anim/to_right_in"
+            app:exitAnim="@anim/to_right_out"
+            app:popEnterAnim="@anim/to_left_in"
+            app:popExitAnim="@anim/to_left_out" />
+        <action
+            android:id="@+id/action_teamBossFragment_to_playerProfileInTeamFragment"
+            app:destination="@id/playerProfileInTeamFragment"
+            app:enterAnim="@anim/to_left_in"
+            app:exitAnim="@anim/to_left_out"
+            app:popEnterAnim="@anim/to_right_in"
+            app:popExitAnim="@anim/to_right_out" />
+        <action
+            android:id="@+id/action_teamBossFragment_to_findGameCreatorFragment"
+            app:destination="@id/findGameCreatorFragment"
+            app:enterAnim="@anim/to_left_in"
+            app:exitAnim="@anim/to_left_out"
+            app:popEnterAnim="@anim/to_right_in"
+            app:popExitAnim="@anim/to_right_out" />
+        <action
+            android:id="@+id/action_teamBossFragment_to_findPlayerFragment2"
+            app:destination="@id/findPlayerFragment"
+            app:enterAnim="@anim/to_left_in"
+            app:exitAnim="@anim/to_left_out"
+            app:popEnterAnim="@anim/to_right_in"
+            app:popExitAnim="@anim/to_right_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/findGameCreatorFragment"
+        android:name="com.game.mobileappar.fragment.team.CreatorFindGameFragment"
+        android:label="team_find_game_creator_fragment"
+        tools:layout="@layout/team_find_game_creator_fragment" >
+        <action
+            android:id="@+id/action_findGameCreatorFragment_to_teamBossFragment"
+            app:destination="@id/teamBossFragment"
+            app:enterAnim="@anim/to_right_in"
+            app:exitAnim="@anim/to_right_out"
+            app:popEnterAnim="@anim/to_left_in"
+            app:popExitAnim="@anim/to_left_out" />
+        <action
+            android:id="@+id/action_findGameCreatorFragment_to_regOnGameFragment"
+            app:destination="@id/regOnGameFragment"
+            app:enterAnim="@anim/to_left_in"
+            app:exitAnim="@anim/to_left_out"
+            app:popEnterAnim="@anim/to_right_in"
+            app:popExitAnim="@anim/to_right_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/regOnGameFragment"
+        android:name="com.game.mobileappar.fragment.team.CreatorRegisterGameFragment"
+        android:label="team_reg_on_game_fragment"
+        tools:layout="@layout/team_reg_on_game_fragment" >
+        <action
+            android:id="@+id/action_regOnGameFragment_to_findGameCreatorFragment"
+            app:destination="@id/findGameCreatorFragment"
+            app:enterAnim="@anim/to_right_in"
+            app:exitAnim="@anim/to_right_out"
+            app:popEnterAnim="@anim/to_left_in"
+            app:popExitAnim="@anim/to_left_out" />
+        <action
+            android:id="@+id/action_regOnGameFragment_to_emptyFragment"
+            app:destination="@id/emptyFragment"
+            app:enterAnim="@anim/to_right_in"
+            app:exitAnim="@anim/to_right_out"
+            app:popEnterAnim="@anim/to_left_in"
+            app:popExitAnim="@anim/to_left_out" />
+        <action
+            android:id="@+id/action_regOnGameFragment_to_teamBossFragment"
+            app:destination="@id/teamBossFragment"
+            app:enterAnim="@anim/to_right_in"
+            app:exitAnim="@anim/to_right_out"
+            app:popEnterAnim="@anim/to_left_in"
+            app:popExitAnim="@anim/to_left_out" />
+    </fragment>
+    <include app:graph="@navigation/messenger_router" />
+</navigation>

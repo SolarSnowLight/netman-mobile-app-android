@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/messenger_router"
+    app:startDestination="@id/messengerFragment2">
+
+    <fragment
+        android:id="@+id/messengerFragment2"
+        android:name="com.game.mobileappar.fragment.messenger.MessengerFragment"
+        android:label="messenger_fragment"
+        tools:layout="@layout/messenger_fragment" >
+        <action
+            android:id="@+id/action_messengerFragment2_to_chatListFragment"
+            app:destination="@id/chatListFragment" />
+        <action
+            android:id="@+id/action_messengerFragment2_to_addChatFragment2"
+            app:destination="@id/addChatFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/addChatFragment2"
+        android:name="com.game.mobileappar.fragment.messenger.AddChatFragment"
+        android:label="messenger_add_chat_fragment"
+        tools:layout="@layout/messenger_add_chat_fragment" >
+        <action
+            android:id="@+id/action_addChatFragment2_to_messengerFragment2"
+            app:destination="@id/messengerFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatListFragment"
+        android:name="com.game.mobileappar.fragment.messenger.ChatListFragment"
+        android:label="messenger_fragment_chats"
+        tools:layout="@layout/messenger_fragment_chats" >
+        <action
+            android:id="@+id/action_chatListFragment_to_messengerFragment2"
+            app:destination="@id/messengerFragment2" />
+        <action
+            android:id="@+id/action_chatListFragment_to_chatInfoFragment2"
+            app:destination="@id/chatInfoFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatInfoFragment2"
+        android:name="com.game.mobileappar.fragment.messenger.ChatInfoFragment"
+        android:label="messenger_chat_info_fragment"
+        tools:layout="@layout/messenger_chat_info_fragment" >
+        <action
+            android:id="@+id/action_chatInfoFragment2_to_chatListFragment"
+            app:destination="@id/chatListFragment" />
+    </fragment>
+</navigation>

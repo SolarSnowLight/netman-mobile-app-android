@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/routes_game_interface_fragments"
+    app:startDestination="@id/hintFragment">
+    <fragment
+        android:id="@+id/hintFragment"
+        android:name="com.game.mobileappar.fragment.game.HintFragment"
+        android:label="fragment_hint"
+        tools:layout="@layout/game_interface_fragment_hint" />
+</navigation>

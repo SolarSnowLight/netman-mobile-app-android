@@ -1,0 +1,80 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name = "ChatsToolbarStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+    </style>
+
+    <style name="netman_ar_g">
+        <item name="android:textSize">
+            40sp
+        </item>
+
+        <item name="android:textColor">
+            #231818
+        </item>
+
+    </style>
+
+    <style name="MyProgressBar" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressBackgroundTint" tools:targetApi="lollipop">#69f0ae</item>
+        <item name="background">"@drawable/ic_progress_bar_back"</item>
+        <item name="android:progressDrawable">"@drawable/ic_progress_bar_back"</item>
+        <item name="borderWidth">100sp</item>
+        <item name="android:progressTint" tools:targetApi="lollipop">#b71c1c</item>
+    </style>
+
+    <style name="SearchView.Theme" parent="Theme.AppCompat">
+        <item name="searchViewStyle">@style/SearchViewStyle</item>
+    </style>
+
+    <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="android:textSize">18sp</item>
+        <item name="fontFamily">@font/century_gothic</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="searchHintIcon">@drawable/ic_magnifying_glass</item>
+        <item name="goIcon">@drawable/ic_magnifying_glass</item>
+        <item name="iconSize">10dp</item>
+        <item name="android:textColorSecondary">#989898</item>
+        <item name="submitBackground">@color/invisible</item>
+        <item name="queryBackground">@color/invisible</item>
+    </style>
+
+    <style name="SpinnerDatePickerDialog" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:calendarViewShown">false</item>
+        <item name="android:datePickerMode" tools:targetApi="lollipop">spinner</item>
+    </style>
+
+
+    <style name="MyTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+
+    <style name="NotCapsButton" parent="Widget.AppCompat.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="GreenButtonThemeOverlay">
+        <item name="colorPrimary">@color/i</item>
+    </style>
+
+    <style name="Widget.App.ButtonStyle"
+        parent="Widget.MaterialComponents.Button">
+        <item name="materialThemeOverlay">@style/GreenButtonThemeOverlay</item>
+    </style>
+<!--    <style name="BottomMenu" parent="Widget.MaterialComponents.BottomNavigationView">-->
+<!--        <item name="iconTint">#FFFFFF</item>-->
+<!--    </style>-->
+
+</resources>

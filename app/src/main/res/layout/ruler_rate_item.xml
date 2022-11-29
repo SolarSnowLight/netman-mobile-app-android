@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tb_ruler_rate_item"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/rectangle_white_rad"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <View
+                android:id="@+id/v_camera_ruler_item"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="22dp"
+                android:layout_marginLeft="22dp"
+                android:background="@drawable/ic_camera_none"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_task_num_ruler_item"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_task_num_ruler_item" />
+
+            <View
+                android:id="@+id/view11_ruler_item_arrow"
+                android:layout_width="35dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="22dp"
+                android:layout_marginRight="22dp"
+                android:background="@drawable/ic_arrow_down"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_task_num_ruler_item"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_task_num_ruler_item" />
+
+
+            <TextView
+                android:id="@+id/tv_task_num_ruler_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/century_gothic"
+                android:text="№1"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_task_condition"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_task_condition"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/century_gothic"
+                android:text="Вы находитесь в тюрьме вместе с Барри и Альбертом. Вы все трое стоите в очереди и смотрите вперед. Вы впереди, за вами Барри, а за ним - Альберт. У охранника три черные и две белые шапки. Он наугад надевает по одной на голову каждого из вас. Альберт видит вашу шапку и шапку Барри, Барри видит вашу, а вы не видите ни одну из них."
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/view11_ruler_item_arrow"
+                app:layout_constraintStart_toStartOf="@+id/v_camera_ruler_item"
+                app:layout_constraintTop_toBottomOf="@+id/v_camera_ruler_item"
+                app:layout_constraintVertical_bias="0.8" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_ruler_rate_marks"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="45dp"
+        android:background="@drawable/rectangle_white_rad"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tb_ruler_rate_item"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tb_ruler_rate_item"
+        app:layout_constraintTop_toBottomOf="@+id/tb_ruler_rate_item">
+
+        <LinearLayout
+            android:id="@+id/ll_rate_teamwork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/textView43"
+            app:layout_constraintEnd_toEndOf="@+id/ll_rate_speed"
+            app:layout_constraintStart_toStartOf="@+id/ll_rate_speed"
+            app:layout_constraintTop_toTopOf="@+id/textView43">
+
+            <ToggleButton
+                android:id="@+id/view8_ruler"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:textOff=""
+                android:textOn=""
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/star_background" />
+
+            <ToggleButton
+                android:id="@+id/view7_ruler"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="5dp"
+                android:textOff=""
+                android:textOn=""
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/star_background" />
+
+            <ToggleButton
+                android:id="@+id/view6_ruler"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="5dp"
+                android:textOff=""
+                android:textOn=""
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/star_background" />
+
+            <ToggleButton
+                android:id="@+id/view5_ruler"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:textOff=""
+                android:textOn=""
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/star_background" />
+
+            <ToggleButton
+                android:id="@+id/view4_ruler"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:textOff=""
+                android:textOn=""
+                android:layout_weight="1"
+                android:background="@drawable/star_background" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_rate_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/textView42"
+            app:layout_constraintEnd_toEndOf="@+id/ll_rate_answer_quality"
+            app:layout_constraintStart_toStartOf="@+id/ll_rate_answer_quality"
+            app:layout_constraintTop_toTopOf="@+id/textView42">
+
+            <ToggleButton
+                android:id="@+id/view8_ruler_speed"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="5dp"
+                android:textOff=""
+                android:textOn=""
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/star_background" />
+
+            <ToggleButton
+                android:id="@+id/view7_ruler_speed"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="5dp"
+                android:textOff=""
+                android:textOn=""
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/star_background" />
+
+            <ToggleButton
+                android:id="@+id/view6_ruler_speed"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="5dp"
+                android:textOff=""
+                android:textOn=""
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/star_background" />
+
+            <ToggleButton
+                android:id="@+id/view5_ruler_speed"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="5dp"
+                android:textOff=""
+                android:textOn=""
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/star_background" />
+
+            <ToggleButton
+                android:id="@+id/view4_ruler_speed"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/star_background"
+                android:textOff=""
+                android:textOn=""
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_rate_answer_quality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView41"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView41">
+
+            <ToggleButton
+                android:id="@+id/view8_ruler_answer_quality"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="5dp"
+                android:text=""
+                android:hint=""
+                android:textOff=""
+                android:textOn=""
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/star_background"
+                android:drawableLeft="@null" />
+
+            <ToggleButton
+                android:id="@+id/view7_ruler_answer_quality"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="5dp"
+                android:textOff=""
+                android:textOn=""
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/star_background" />
+
+            <ToggleButton
+                android:id="@+id/view6_ruler_answer_quality"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="5dp"
+                android:textOff=""
+                android:textOn=""
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/star_background" />
+
+            <ToggleButton
+                android:id="@+id/view5_ruler_answer_quality"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/star_background"
+                android:textOff=""
+                android:textOn=""
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <ToggleButton
+                android:id="@+id/view4_ruler_answer_quality"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:textOff=""
+                android:textOn=""
+                android:layout_weight="1"
+                android:background="@drawable/star_background" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:fontFamily="@font/century_gothic"
+            android:text="Отчет комнады"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_ruler_rate_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginLeft="17dp"
+            android:fontFamily="@font/century_gothic"
+            android:text="mp4-video-21.02.2022"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view2"
+            app:layout_constraintStart_toEndOf="@+id/view2"
+            app:layout_constraintTop_toTopOf="@+id/view2"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="35dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/ic_media_none"
+            app:layout_constraintBottom_toTopOf="@+id/textView41"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/century_gothic"
+            android:text="Командность"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@+id/view2"
+            app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/century_gothic"
+            android:text="Скорость"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@+id/textView41"
+            app:layout_constraintTop_toBottomOf="@+id/textView41" />
+
+        <TextView
+            android:id="@+id/textView43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/century_gothic"
+            android:text="Качество ответа"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView42"
+            app:layout_constraintTop_toBottomOf="@+id/textView42" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

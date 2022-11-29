@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_grMess"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        app:cardBackgroundColor="@color/invisible"
+        app:cardCornerRadius="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="55dp">
+
+            <ImageView
+                android:id="@+id/chatImage"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+
+                android:background="@drawable/chat_item_image" />
+        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_chatName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/century_gothic"
+        android:maxLength="25"
+        android:text="Командный чат"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv_chatLastMess"
+        app:layout_constraintEnd_toStartOf="@+id/textView31"
+        app:layout_constraintStart_toEndOf="@+id/cardView_grMess"
+        app:layout_constraintTop_toTopOf="@+id/cardView_grMess" />
+
+    <TextView
+        android:id="@+id/tv_chatLastMess"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/century_gothic"
+        android:gravity="bottom"
+        android:maxLength="25"
+        android:paddingTop="3dp"
+        android:text="Вася Пупкин: А точно,hhhh"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView_grMess"
+        app:layout_constraintEnd_toEndOf="@+id/tv_chatName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_chatName"
+        app:layout_constraintTop_toBottomOf="@+id/tv_chatName" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center|center_horizontal"
+        android:maxLength="5"
+        android:text="23:59"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_chatName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_chatName"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:background="@drawable/badge_messenger"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:maxLength="5"
+        android:minWidth="25dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:text="9"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_chatLastMess"
+        app:layout_constraintEnd_toEndOf="@+id/textView31"
+        app:layout_constraintStart_toStartOf="@+id/textView31"
+        app:layout_constraintTop_toTopOf="@+id/tv_chatLastMess" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
